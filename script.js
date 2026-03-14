@@ -6,7 +6,7 @@ attribution:'Map'
 
 let provincesData = [];
 
-fetch("data/provinces.json")
+fetch("provinces.json")
 .then(res=>res.json())
 .then(data=>{
 provincesData=data;
