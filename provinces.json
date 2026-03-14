@@ -1,0 +1,25 @@
+[
+{
+"name":"Hà Nội",
+"merged_from":["Hà Nội"],
+"coordinates":[21.0285,105.8542]
+},
+
+{
+"name":"TP Hồ Chí Minh",
+"merged_from":["TP HCM"],
+"coordinates":[10.8231,106.6297]
+},
+
+{
+"name":"Tỉnh mới A",
+"merged_from":["Tỉnh A","Tỉnh B"],
+"coordinates":[16.4637,107.5909]
+},
+
+{
+"name":"Tỉnh mới B",
+"merged_from":["Tỉnh C","Tỉnh D"],
+"coordinates":[15.8801,108.3380]
+}
+]
