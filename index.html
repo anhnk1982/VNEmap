@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tỉnh thành Việt Nam sau sáp nhập</title>
+
+<style>
+body{
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1{
+    text-align:center;
+}
+
+.province{
+    border:1px solid #ddd;
+    padding:10px;
+    margin:10px;
+    border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Bản đồ tỉnh thành Việt Nam (sau sáp nhập)</h1>
+
+<div id="list"></div>
+
+<script>
+
+const provinces = [
+    {
+        name:"Hà Nội",
+        merged_from:["Hà Nội"]
+    },
+    {
+        name:"TP Hồ Chí Minh",
+        merged_from:["TP HCM"]
+    },
+    {
+        name:"Tỉnh ví dụ sau sáp nhập",
+        merged_from:["Tỉnh A","Tỉnh B"]
+    }
+];
+
+const container = document.getElementById("list");
+
+provinces.forEach(p=>{
+    const div = document.createElement("div");
+    div.className="province";
+
+    div.innerHTML=`
+        <h3>${p.name}</h3>
+        <p>Sáp nhập từ: ${p.merged_from.join(", ")}</p>
+    `;
+
+    container.appendChild(div);
+});
+
+</script>
+
+</body>
+</html>
